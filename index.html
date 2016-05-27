@@ -1,0 +1,73 @@
+<!--
+  load with:
+    mac: open /Applications/Google\ Chrome.app --args --disable-web-security --user-data-dir
+-->
+<html>
+  <head>
+    <title>Wins</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <iframe id="contentFrame" width="100%" height="50%"></iframe>
+    <div class="meter">
+      <span id="proBar" style="width: 0%"></span>
+      <div id="pctLbl">0.00%</div>
+    </div>
+    <ul id="teamList"><!--
+      --><li><img id="team-ari" class="disabledTeam" src="images/ari.jpg"/></li><!--
+      --><li><img id="team-atl" class="disabledTeam" src="images/atl.jpg"/></li><!--
+      --><li><img id="team-bal" class="disabledTeam" src="images/bal.jpg"/></li><!--
+      --><li><img id="team-bos" class="disabledTeam" src="images/bos.jpg"/></li><!--
+      --><li><img id="team-chc" class="disabledTeam" src="images/chc.jpg"/></li><!--
+      --><li><img id="team-chw" class="disabledTeam" src="images/cws.jpg"/></li><!--
+      --><li><img id="team-cin" class="disabledTeam" src="images/cin.jpg"/></li><!--
+      --><li><img id="team-cle" class="disabledTeam" src="images/cle.jpg"/></li><!--
+      --><li><img id="team-col" class="disabledTeam" src="images/col.jpg"/></li><!--
+      --><li><img id="team-det" class="disabledTeam" src="images/det.jpg"/></li><!--
+      --><li><img id="team-hou" class="disabledTeam" src="images/hou.jpg"/></li><!--
+      --><li><img id="team-kcr" class="disabledTeam" src="images/kcr.jpg"/></li><!--
+      --><li><img id="team-laa" class="disabledTeam" src="images/ana.jpg"/></li><!--
+      --><li><img id="team-lad" class="disabledTeam" src="images/lad.jpg"/></li><!--
+      --><li><img id="team-mia" class="disabledTeam" src="images/mia.jpg"/></li><!--
+      --><li><img id="team-mil" class="disabledTeam" src="images/mil.jpg"/></li><!--
+      --><li><img id="team-min" class="disabledTeam" src="images/min.jpg"/></li><!--
+      --><li><img id="team-nym" class="disabledTeam" src="images/nym.jpg"/></li><!--
+      --><li><img id="team-nyy" class="disabledTeam" src="images/nyy.jpg"/></li><!--
+      --><li><img id="team-oak" class="disabledTeam" src="images/oak.jpg"/></li><!--
+      --><li><img id="team-phi" class="disabledTeam" src="images/phi.jpg"/></li><!--
+      --><li><img id="team-pit" class="disabledTeam" src="images/pit.jpg"/></li><!--
+      --><li><img id="team-sdp" class="disabledTeam" src="images/sdp.jpg"/></li><!--
+      --><li><img id="team-sfg" class="disabledTeam" src="images/sfg.jpg"/></li><!--
+      --><li><img id="team-sea" class="disabledTeam" src="images/sea.jpg"/></li><!--
+      --><li><img id="team-stl" class="disabledTeam" src="images/stl.jpg"/></li><!--
+      --><li><img id="team-tbr" class="disabledTeam" src="images/tbr.jpg"/></li><!--
+      --><li><img id="team-tex" class="disabledTeam" src="images/tex.jpg"/></li><!--
+      --><li><img id="team-tor" class="disabledTeam" src="images/tor.jpg"/></li><!--
+      --><li><img id="team-wsn" class="disabledTeam" src="images/was.jpg"/></li><!--
+    --></ul>
+    <div id="timeWrapper">
+      <h3 id="timeLbl">Estimated Remaining Time:</h3><span id="time">?</span>
+    </div>
+    <h2 id="tableHdr"></h2>
+    <table id="dataTable" class="hidden">
+      <tr>
+        <th>Year</th>
+        <th>Name</th>
+        <th>Wins</th>
+        <th>Team</th>
+      </tr>
+    </table>
+    <div id="overlayWrapper" class="hidden">
+      <div id="overlay">
+        <h3>Error!</h3>
+        <p>This page attempts to access cross-domain data via an iframe. Use the following commands to open Chrome with security features disabled and then attempt to reload the page.</p>
+        <h5>Windows (via run):</h5>
+        <pre>chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security</pre>
+        <h5>Mac (via terminal):</h5>
+        <pre>open /Applications/Google\ Chrome.app --args --disable-web-security --user-data-dir</pre>
+      </div>
+    </div>
+  </body>
+</html>
